@@ -25,7 +25,7 @@ public class FirstTest {
     WebDriverWait wait;
 
     @BeforeMethod
-    public void setUp() {
+    public void setUp() throws InterruptedException {
         WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
 
